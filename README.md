@@ -2,6 +2,7 @@
 
 This is a small project demonstrating how to build an API with FastAPI (python framework).
 
+[FastAPI](https://fastapi.tiangolo.com/) is a modern, fast (high-performance), web framework for building APIs based on standard Python type hints.FastAPI’s core use case is creating API endpoints, delivering Python dictionary data as JSON, or utilizing the OpenAPI standard, which includes an interactive Swagger UI.
 
 
 ## Running the server
@@ -12,19 +13,18 @@ Create and activate your Python virtualenv, and then run the following from your
 python -m pip install -r requirements.txt
 ```
 
-Set your [Atlas URI connection string](https://docs.atlas.mongodb.com/getting-started/) as a parameter in `.env`. Make sure you replace the username and password placeholders with your own credentials.
+Create MongoDB Atlas accout and set your [Atlas URI connection string](https://docs.atlas.mongodb.com/getting-started/) as a parameter in `.env`. Make sure you replace the username and password placeholders with your own credentials.
 
 ```
 ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net
 ```
-
+In this project we use creator account to ease the configuration. 
 
 
 Start the server:
 ```
-python -m uvicorn main:app --reload
+python app/main.py
 ```
-
 
 ## Summary
 
@@ -37,6 +37,7 @@ python -m uvicorn main:app --reload
 | DELETE | `/api/customer/{id}`      |    delete customer data |
 
 ### Links created by FastAPI
+
 
 | Link                        | Description                                                          |
 | --------------------------- | -------------------------------------------------------------------- |
