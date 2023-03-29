@@ -24,3 +24,14 @@ Start the server:
 ```
 python -m uvicorn main:app --reload
 ```
+
+
+## Summary
+
+| HTTP Method        | Route           | Description  |
+| ------------- |:-------------:| -----:|
+| GET      | /api/customers | retrieve all customers data |
+| POST      | /api/customer      |   add a new customer data |
+| GET | /api/customer/id      |    get customer data |
+| PACTH  | /api/customer/id      |   edit customer data |
+| DELETE | /api/customer/id      |    delete customer data |
